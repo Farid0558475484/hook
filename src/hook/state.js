@@ -8,6 +8,7 @@ function State() {
   const [state, setState] = useState({
     title: "Счетчик",
     date: Date.now(),
+    counter: counter,
   });
 
   function increment() {
@@ -25,6 +26,7 @@ function State() {
       return {
         ...prev,
         title: "Новое название",
+        counter: counter,
       };
     });
   }
